@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Quiz Completer",
+  "version": "10.0",
+  "description": "Tự động hoàn thành quiz Kỹ thuật lái xe ô tô đến 100%",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+    "matches": ["https://lachong.huelms.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+    }
+  ]
+  }
